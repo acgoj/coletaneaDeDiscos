@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import { hashHistory } from 'react-router'
 import axios from 'axios'
 
+import Config from '../../config.json'
 import PageHeader from '../template/pageHeader'
 import Search from '../template/search'
 import DiskList from './diskList'
 import ShowError from '../template/showError';
 
-const URL = 'http://localhost:3000/disks'
+const URL = `${Config.URLBack}/disks`
 
 export default class Disk extends Component {
     constructor(props) {

@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { hashHistory } from 'react-router'
 
+import Config from '../../config.json'
 import PageHeader from '../template/pageHeader'
 import Search from '../template/search'
 import CollectionList from './CollectionList'
 import ShowError from '../template/showError'
 
-const URL = 'http://localhost:3000/collections'
+const URL = `${Config.URLBack}/collections`
 
 export default class Collection extends Component {
     constructor(props) {

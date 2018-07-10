@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import { hashHistory } from 'react-router'
 import axios from 'axios'
 
+import Config from '../../config.json'
 import PageHeader from '../template/pageHeader'
 import CollectionForm from './collectionForm'
 import ShowError from '../template/showError';
 
-const URL = 'http://localhost:3000/collections'
+const URL = `${Config.URLBack}/collections`
 
 export default class CollectionEdit extends Component {
     constructor(props)
