@@ -1,0 +1,10 @@
+{
+    "db": {
+        "host": "localhost",
+        "port" : 3306,
+        "databaseName": "diskscollections",
+        "user" : "root",
+        "password" : "2cy9G2hx"
+    },
+    "port" : 3000
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/config/server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "prd": "pm2 start server/config/server.js --name coletanea-discos",
+    "test": "node ./server.tests/index.test.js  | tap-spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.11.0",
+    "pm2": "^2.1.5",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
