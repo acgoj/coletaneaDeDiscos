@@ -4,7 +4,7 @@
         "port" : 3306,
         "databaseName": "diskscollections",
         "user" : "root",
-        "password" : "2cy9G2hx"
+        "password" : ""
     },
     "port" : 3000
 }
